@@ -4,18 +4,19 @@ public class enunciado2 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Introduce entre qué números deseas el límite");
+		String numaleatorio=JOptionPane.showInputDialog("Cuántos números aleatorios quieres");
+		int cuantos	= Integer.parseInt(numaleatorio);
 		
-		String numaleatorio=JOptionPane.showInputDialog("Introduce el mínimo:");
+		numaleatorio=JOptionPane.showInputDialog("Introduce el mínimo:");
 		int numero1 = Integer.parseInt(numaleatorio);
 		
 		numaleatorio=JOptionPane.showInputDialog("Introduce el máximo:");
 		int numero2 = Integer.parseInt(numaleatorio);
 		
-		int numero=aleatorio(numero1,numero2);
-		
-		System.out.println(numero+" es un número correcto");
-
+	
+		for(int n=0; n<cuantos; n++) {
+		System.out.println(aleatorio(numero1, numero2)+" es un número correcto");
+		}
 	}	
 		
 	public static int aleatorio (int num1, int num2) {
