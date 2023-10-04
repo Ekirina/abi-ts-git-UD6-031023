@@ -20,8 +20,7 @@ public class enunciado6 {
 			System.out.println(cadena.length());
 			num = Integer.parseInt(cadena);
 		}else {
-			System.out.print("Error");
-
+			System.out.print("Error de número");
 		}
 		
 		return num;
