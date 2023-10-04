@@ -19,7 +19,11 @@ public class enunciado6 {
 			String cadena = Integer.toString(num);
 			System.out.println(cadena.length());
 			num = Integer.parseInt(cadena);
+		}else {
+			System.out.print("Error");
+
 		}
+		
 		return num;
 	}
 }
