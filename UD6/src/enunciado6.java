@@ -9,14 +9,17 @@ public class enunciado6 {
 		
 		int number = sc.nextInt();
 		sc.close();
-
-		if (number>=0) {
-			System.out.print("Número de dígitos: ");
-			String cadena = Integer.toString(number);
-			System.out.println(cadena.length());
-			
-		}
 		
+		System.out.println(numcadena(number));
+	}	
+		
+	public static int numcadena(int num) {
+		if (num>=0) {
+			System.out.print("Número de dígitos: ");
+			String cadena = Integer.toString(num);
+			System.out.println(cadena.length());
+			num = Integer.parseInt(cadena);
+		}
+		return num;
 	}
-
 }
