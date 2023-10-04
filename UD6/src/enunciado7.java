@@ -5,11 +5,12 @@ public class enunciado7 {
 	public static void main(String[] args) {
 		String euro=JOptionPane.showInputDialog("Introduce la cantidad en €:");
 		String moneda=JOptionPane.showInputDialog("¿Qué conversión prefiere: yenes, libras o dólares?");
+		
+		dinero(euro,moneda);
 
-		System.out.println(dinero(euro,moneda));
 	}
 	
-	public static String dinero(String eneuro, String coin) {
+	public static void dinero(String eneuro, String coin) {
 
 		switch (coin) {
 		case "yenes":
@@ -33,6 +34,7 @@ public class enunciado7 {
 		default:
 			break;
 		}	
-		return coin;
+		System.out.println("La conversión es en " +coin);
+		
 	}
 }
