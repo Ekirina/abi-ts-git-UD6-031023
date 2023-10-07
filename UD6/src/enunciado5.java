@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class enunciado5 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Introduce un número: ");
-		
-		int number = sc.nextInt();
-		
-	    System.out.println(binario(number));
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("Introduce un número: ");
+			
+			int number = sc.nextInt();
+			
+			System.out.println(binario(number));
+		}
 		
 	}
 	
@@ -21,5 +22,4 @@ public class enunciado5 {
 		}
 		return num;
 	}
-
 }
